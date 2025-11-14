@@ -1,0 +1,64 @@
+{
+  "name": "Hacker News Automation",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f8291fe9-99b6-4b18-8b17-1ac13421e246",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "resource": "all",
+        "additionalFields": {
+          "keyword": "automation"
+        }
+      },
+      "type": "n8n-nodes-base.hackerNews",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "e6c55dea-3599-4b6e-935f-8e0b1f727bd5",
+      "name": "Get many items"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get many items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e6aff6e5-53da-4c51-a831-08c0654f030f",
+  "meta": {
+    "instanceId": "d6fa39d2f6acf4f486e84fe45090d12a5469fa614668ea637a2b087e5e179505"
+  },
+  "id": "nsE16UPZjVaCUJap",
+  "tags": []
+}
