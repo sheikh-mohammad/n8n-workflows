@@ -1,0 +1,72 @@
+{
+  "name": "Mini Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "894da000-9802-4201-af32-9dae937c893f",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "all",
+        "limit": 10,
+        "additionalFields": {
+          "keyword": "automation"
+        }
+      },
+      "type": "n8n-nodes-base.hackerNews",
+      "typeVersion": 1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "f5ae060a-a63b-423f-900e-dab5b78048ce",
+      "name": "Get many items",
+      "notesInFlow": true,
+      "notes": "News"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get many items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "5185f079-52f6-4021-b837-81c39364db91",
+  "meta": {
+    "instanceId": "d6fa39d2f6acf4f486e84fe45090d12a5469fa614668ea637a2b087e5e179505"
+  },
+  "id": "tjBj8I23KCpvFqzH",
+  "tags": [
+    {
+      "createdAt": "2025-11-16T04:13:17.706Z",
+      "updatedAt": "2025-11-16T04:13:17.706Z",
+      "id": "AN9a353IzeyKa19t",
+      "name": "panaversity"
+    },
+    {
+      "createdAt": "2025-11-16T04:13:24.814Z",
+      "updatedAt": "2025-11-16T04:13:24.814Z",
+      "id": "cQUKYD5Mdn4RFDmh",
+      "name": "hacker-news"
+    }
+  ]
+}
