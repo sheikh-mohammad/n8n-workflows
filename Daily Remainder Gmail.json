@@ -32,7 +32,7 @@
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,
       "position": [
-        208,
+        224,
         0
       ],
       "id": "07d2f9a0-3e64-4467-8ef8-582843e8419c",
@@ -66,11 +66,18 @@
     "timezone": "Asia/Karachi",
     "callerPolicy": "workflowsFromSameOwner"
   },
-  "versionId": "64ca721d-2bcb-456e-8c1d-06c46242eb77",
+  "versionId": "4b1e0e4e-c643-43e6-8139-9aa05dbd432a",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "d6fa39d2f6acf4f486e84fe45090d12a5469fa614668ea637a2b087e5e179505"
   },
   "id": "rCbfEe8p246Rs5er",
-  "tags": []
+  "tags": [
+    {
+      "name": "chat-gpt",
+      "id": "VoJPLSm4JZ9dcoUT",
+      "createdAt": "2025-11-16T04:57:15.119Z",
+      "updatedAt": "2025-11-16T04:57:15.119Z"
+    }
+  ]
 }
