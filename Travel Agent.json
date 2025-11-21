@@ -7,8 +7,8 @@
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.3,
       "position": [
-        0,
-        0
+        224,
+        -112
       ],
       "id": "bfd237cb-29bc-4134-be71-0520e48d9cd8",
       "name": "When chat message received",
@@ -21,8 +21,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        176,
-        0
+        400,
+        -112
       ],
       "id": "90aff22c-4cf3-4b7a-bdb2-00bf2429105c",
       "name": "AI Agent"
@@ -34,11 +34,17 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        48,
-        208
+        272,
+        96
       ],
       "id": "ad2b486f-4d54-44d7-9480-72dbd5a93628",
-      "name": "Google Gemini Chat Model"
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "y7pgKBgRwW2E3ih3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
     }
   ],
   "connections": {
