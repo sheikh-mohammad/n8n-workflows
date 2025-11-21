@@ -1,5 +1,4 @@
 {
-  "name": "AI Agent Fundamentals",
   "nodes": [
     {
       "parameters": {
@@ -14,45 +13,17 @@
       "id": "bfd237cb-29bc-4134-be71-0520e48d9cd8",
       "name": "When chat message received",
       "webhookId": "e39942c0-0aa9-456c-a446-d5d3ba9bf21e"
-    },
-    {
-      "parameters": {
-        "options": {
-          "systemMessage": "You are a helpful assistant"
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 2.2,
-      "position": [
-        224,
-        0
-      ],
-      "id": "adf3a5c4-3212-4c69-b854-561a8775aa2f",
-      "name": "AI Agent"
     }
   ],
-  "pinData": {},
   "connections": {
     "When chat message received": {
       "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     }
   },
-  "active": false,
-  "settings": {
-    "executionOrder": "v1"
-  },
-  "versionId": "e39c30e2-601d-418b-b20c-052154b10f26",
+  "pinData": {},
   "meta": {
     "instanceId": "d6fa39d2f6acf4f486e84fe45090d12a5469fa614668ea637a2b087e5e179505"
-  },
-  "id": "Fd4cc0cIPf8ln1Fm",
-  "tags": []
+  }
 }
