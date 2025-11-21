@@ -26,6 +26,25 @@
       ],
       "id": "90aff22c-4cf3-4b7a-bdb2-00bf2429105c",
       "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        48,
+        208
+      ],
+      "id": "4d48e751-278f-4c88-a5e1-d4df798b6d66",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "xOeRf62ccxIBOxdD",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
     }
   ],
   "connections": {
@@ -39,10 +58,22 @@
           }
         ]
       ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "pinData": {},
   "meta": {
+    "templateCredsSetupCompleted": true,
     "instanceId": "d6fa39d2f6acf4f486e84fe45090d12a5469fa614668ea637a2b087e5e179505"
   }
 }
